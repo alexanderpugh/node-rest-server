@@ -1,0 +1,20 @@
+{
+    "exampleRouteName": {
+      "url": "example",
+      "controller": "example.controllerMethod",
+      "httpMethod": "GET",
+      "authRequired": false
+    },
+    "loginRoute": {
+      "url": "login",
+      "controller": "register.login",
+      "httpMethod": "POST",
+      "authRequired": false
+    },
+    "signupRoute": {
+      "url": "signup",
+      "controller": "register.signup",
+      "httpMethod": "POST",
+      "authRequired": false
+    }
+}

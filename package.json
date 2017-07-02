@@ -1,0 +1,22 @@
+{
+  "name": "node-rest-server",
+  "version": "1.0.0",
+  "description": "A boilerplate node rest api server using Mongo",
+  "main": "app.js",
+  "scripts": {
+    "start:mongo": "mongod",
+    "dev": "nodemon app.js",
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "author": "Your name",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "latest",
+    "morgan": "^1.7.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "developAdminRoot": {
+    "url": "develop",
+    "controller": "indevelop.root",
+    "httpMethod": "GET",
+    "authRequired": false
+  },
+  "developAdminClient": {
+    "url": "develop/client",
+    "controller": "indevelop.client",
+    "httpMethod": "GET",
+    "authRequired": false
+  },
+  "developAdminGetUsers": {
+    "url": "develop/users",
+    "controller": "indevelop.getUsers",
+    "httpMethod": "GET",
+    "authRequired": false
+  },
+  "developAdminAddUser": {
+    "url": "develop/users",
+    "controller": "indevelop.addUser",
+    "httpMethod": "POST",
+    "authRequired": false
+  },
+  "developAdminDeleteUser": {
+    "url": "develop/users/:userID",
+    "controller": "indevelop.deleteUser",
+    "httpMethod": "DELETE",
+    "authRequired": false
+  }
+}

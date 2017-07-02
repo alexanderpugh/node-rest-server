@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+<!-- angular app files -->
+<script src='<%= baseUrl%>applications/expensesApp/app.js'></script>
+<script src='<%= baseUrl%>applications/expensesApp/controllers/showAll.js'></script>
+<script src='<%= baseUrl%>applications/expensesApp/controllers/showIndividual.js'></script>
+<script src='<%= baseUrl%>applications/expensesApp/controllers/addExpense.js'></script>
+
+<!-- start of application area -->
+
+<div ng-app='expensesApp' id='cust-app'>
+	<div ng-view></div>
+</div>
+
+<% include ../partials/footer %>
