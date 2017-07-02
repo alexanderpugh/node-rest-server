@@ -24,7 +24,7 @@ module.exports = {
           if (err) {
             jsonRes.message = 'ERROR: unable to log user in. Incorrect details.';         
           } else {
-            jsonRes.data.token = this.setAndSetToken(user.getInserted());
+            jsonRes.data.token = this.setAndSendToken(user.getInserted());
             jsonRes.success = true;
           }
           res.json(jsonRes); 
@@ -52,13 +52,13 @@ module.exports = {
         jsonRes.message = 'ERROR: unable to sign user up';
       } else {
         jsonRes.success = true;
-        jsonRes.data.token = this.setAndSetToken(user.getInserted());
+        jsonRes.data.token = this.setAndSendToken(user.getInserted());
       }
       res.send(jsonRes);
     });
   },
 
-  setAndSetToken (user) {
+  setAndSendToken (user) {
     return jsonwebtoken.sign(user, config.secret, {
       expiresIn: 1440 
     });
